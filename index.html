@@ -52,8 +52,19 @@
 </div>
 
 <div id="recording-page" style="display: none">
+<p color: FF0000>请注意：如果您重新加载此页，您的记录将会消失！</p>
 <p id="never-test" style="margin-top: 15%; text-align: center; font-size: 22px; color: #444;">你还没有进行过测试!</p>
-	
+
+<table border="1" id="recording-table" style="display: none;">
+	<tbody>
+		<tr>
+			<th>点击次数</th>
+			<th>最高CPS</th>
+			<th>最低CPS</th>
+			<th>平均CPS</th>
+		</tr>
+	</tbody>
+</table>
 <div class="tools">
     <button type="button" class="btn green" id="excell" onclick="method5('recording-table')"  title="如果没有成功下载，则有可能是浏览器问题">导出表格</button>
 </div>
@@ -143,16 +154,6 @@
         }
     })()
 </script>
-<table border="1" id="recording-table" style="display: none;">
-	<tbody>
-		<tr>
-			<th>点击次数</th>
-			<th>最高CPS</th>
-			<th>最低CPS</th>
-			<th>平均CPS</th>
-		</tr>
-	</tbody>
-</table>
 </div>
 
 <div id="about-page" style="display: none">
